@@ -22,12 +22,9 @@ Installing I2P**
 
 `gpg -n --import --import-options import-show i2p-debian-repo.key.asc`
 
-**If it looks good import into trusted.gpg.d.
-To import asc key files into trusted.gpg.d they must be converted into a .gpg keychain file first.**
+**If it looks good add it to APT's Keyring**
 
-`gpg --no-default-keyring --keyring ./i2p-pubkey.gpg --import i2p-debian-repo.key.asc`
-
-`sudo cp i2p-pubkey.gpg /etc/apt/trusted.gpg.d/i2p-pubkey.gpg`
+`sudo apt-key add i2p-debian-repo.key.asc`
 
 **For Whonix 13 using Debian stable:**
 
