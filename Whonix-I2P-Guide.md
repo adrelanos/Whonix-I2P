@@ -113,8 +113,9 @@ router.reseedSSLRequired=false
 
 **Disable the https outproxy (port 4445)**
 
-`sed -i 's|^.*\(tunnel\.6\.startOnLoad\).*|\1=false|' "/var/lib/i2p/i2p-config/i2ptunnel.config"
-Changing I2P’s listening interface`
+`sed -i 's|^.*\(tunnel\.6\.startOnLoad\).*|\1=false|' "/var/lib/i2p/i2p-config/i2ptunnel.config"`
+
+**Changing I2P’s listening interface**
 
 **I2P listens for connections on 127.0.0.1. This won’t work for us since we want to access I2P from the Workstation.
 We’ll setup I2P to listen on the Gateway IP, which could be 10.137.x.10 depending on the Whonix version that you’re using. Note:
