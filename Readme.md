@@ -1,3 +1,5 @@
+See https://forums.whonix.org/t/i2p-integration/4981 for more Informations 
+
 ### Preparation
 
 **Create a separate Gateway (TemplateVM&) ProxyVm and Workstation (TemplateVM&) AppVM
