@@ -147,13 +147,13 @@ accept-intercepted-requests 1
 max-client-connections 512
 ```
 **uncomment the line below to use the trust mechanism**
-
-`trustfile trust`
-
+```
+`rustfile trust
+```
 **change the line below to enforce the trust mechanism and restart privoxy**
-
-`enforce-blocks 0 to 1`  
-
+```
+enforce-blocks 0 to 1
+```
 **Edit the newly created file and add the lines below:**
 
 `kdesudo kwrite /etc/privoxy/trust`
