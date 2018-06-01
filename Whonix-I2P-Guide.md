@@ -158,10 +158,10 @@ max-client-connections 512
 
 `kdesudo kwrite /etc/privoxy/trust`
 
-...
+```
 ~*.i2p
 ~.torproject.org
-...
+```
 
 
 **Forwarding Whonix-Workstations Ports to Whonix-Gateway local Ports**
