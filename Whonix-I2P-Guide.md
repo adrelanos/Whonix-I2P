@@ -139,13 +139,30 @@ By the time we’re finished here, you will be able to access I2P from the works
 
 `sudo apt-get install privoxy`
 
-**Edit the** `/etc/privoxy/user.action` **and add i2p forwarding**
+**Edit the** `/etc/privoxy/config` **add i2p forwarding**
 
 ```
 forward .i2p 127.0.0.1:4444
 accept-intercepted-requests 1
 max-client-connections 512
 ```
+**uncomment the line below to use the trust mechanism**
+
+`trustfile trust`
+
+**change the line below to enforce the trust mechanism and restart privoxy**
+
+`enforce-blocks 0 to 1`  
+
+**Edit the newly created file and add the lines below:**
+
+`kdesudo kwrite /etc/privoxy/trust`
+
+...
+~*.i2p
+~.torproject.org
+...
+
 
 **Forwarding Whonix-Workstations Ports to Whonix-Gateway local Ports**
 
