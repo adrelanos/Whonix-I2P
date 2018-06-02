@@ -9,7 +9,7 @@ Installing I2P**
 
 **We’ll install I2P using the Debian packages.**
 
-**Before adding the repo** https://geti2p.net/en/download/debian2,** fetch the key and verify** https://geti2p.net/_static/i2p-debian-repo.key.asc1 fingerprints. 
+**Before adding the repo** https://geti2p.net/en/download/debian2,**fetch the key and verify** https://geti2p.net/_static/i2p-debian-repo.key.asc1 fingerprints. 
 ##### Always check the fingerprint for yourself. 
 **The output at the moment is:**
 
