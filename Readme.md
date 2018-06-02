@@ -150,7 +150,7 @@ max-client-connections 512
 ```
 **uncomment the line below to use the trust mechanism**
 ```
-`rustfile trust
+trustfile trust
 ```
 **change the line below to enforce the trust mechanism and restart privoxy**
 ```
