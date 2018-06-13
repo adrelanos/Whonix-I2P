@@ -148,6 +148,10 @@ forward .i2p 127.0.0.1:4444
 accept-intercepted-requests 1
 max-client-connections 512
 ```
+** if you want to use Zeronet add the Line below **
+```
+forward .bit 127.0.0.1:43110
+```
 **uncomment the line below to use the trust mechanism**
 ```
 trustfile trust
