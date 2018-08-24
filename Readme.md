@@ -123,12 +123,12 @@ router.reseedSSLRequired=false
 We’ll setup I2P to listen on the Gateway IP, which could be 10.137.x.10 depending on the Whonix version that you’re using. Note:
 By the time we’re finished here, you will be able to access I2P from the workstation via 127.0.0.1 as well.**
 
-`GATEWAYIP=$(ip addr | grep 'eth1' | grep -v 'BROADCAST' | cut -d / -f 1 | awk '{print $2}')
-`
+`GATEWAYIP=$(ip addr | grep 'eth1' | grep -v 'BROADCAST' | cut -d / -f 1 | awk '{print $2}')`
+
 `sudo sed -i "s/\(.*interface=\).*/\1$GATEWAYIP/g;s/\(.*targetHost=\).*/\1$GATEWAYIP/g" /var/lib/i2p/i2p-config/i2ptunnel.config`
 
-`sudo sed -i "s/127\.0\.0\.1/$GATEWAYIP/g" /var/lib/i2p/i2p-config/clients.config
-`
+`sudo sed -i "s/127\.0\.0\.1/$GATEWAYIP/g" /var/lib/i2p/i2p-config/clients.config`
+
 `echo -e "susimail.host=$GATEWAYIP" | sudo tee /var/lib/i2p/i2p-config/susimail.config > /dev/null`
 
 **change the Router console listening IP back to localhost**
